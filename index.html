@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & localStorage Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation & Preferences Demo</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <div class="preference-option">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="preference-option">
+                <label for="animation">Favorite Animation:</label>
+                <select id="animation">
+                    <option value="bounce">Bounce</option>
+                    <option value="spin">Spin</option>
+                    <option value="pulse">Pulse</option>
+                </select>
+            </div>
+            <button id="savePrefs">Save Preferences</button>
+        </div>
+        
+        <div class="animation-area">
+            <h2>Animation Playground</h2>
+            <div class="animated-box" id="animatedBox">
+                Click me or use your saved animation!
+            </div>
+            <button id="triggerAnimation">Trigger Animation</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

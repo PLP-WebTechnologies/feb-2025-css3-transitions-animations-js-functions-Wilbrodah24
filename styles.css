@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 19px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.preferences, .animation-area {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.preference-option {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+}
+
+select, button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Animation Classes */
+.bounce {
+    animation: bounce 0.8s ease infinite alternate;
+}
+
+.spin {
+    animation: spin 1.5s linear infinite;
+}
+
+.pulse {
+    animation: pulse 2s ease infinite;
+}
+
+/* Keyframe Animations */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Theme Classes */
+.light-theme {
+    background-color: white;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+.dark-theme .preferences, 
+.dark-theme .animation-area {
+    background: #444;
+    color: blue;
+}
+
+.blue-theme {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+.blue-theme .preferences, 
+.blue-theme .animation-area {
+    background: #cce0ff;
+}
